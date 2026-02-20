@@ -1,0 +1,7 @@
+# .htaccess en la raíz del proyecto
+AddDefaultCharset UTF-8
+
+# Forzar UTF-8 para todos los tipos de archivo
+<FilesMatch "\.(php|html|css|js)$">
+    ForceType 'text/html; charset=UTF-8'
+</FilesMatch>
